@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div id="main-content-wrapper">
+        <header>
+            <h1> Personalized Recipe Recommender</h1>
+            <p>Input your Dietary Restrictions and an Ingredient you have on hand</p>
+        </header>
+
+        <section id="search-section">
+            <form id="recipe-search-form">
+                
+                <select id="diet-restriction">
+                    <option value="">No Restriction</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <optionion value="Gluten-Free">Gluten-Free</option>
+                    <option value="Keto">Keto</option>
+                </select>
+                
+                <input 
+                    type="text" 
+                    id="ingredient-input" 
+                    placeholder="Enter ingredient (e.g., chicken, pasta)" 
+                    value="" 
+                    required
+                >
+                <button type="submit">Search</button>
+            </form>
+            <p id="feedback-message" aria-live="polite"></p>
+        </section>
+
+        <section id="results-section">
+            <div id="recipes-container">
+                </div>
+        </section>
+    </div>
+</body>
+</html>
